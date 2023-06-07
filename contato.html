@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contato</title>
+<head>
+    <title>Contato</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+    <img id="logo" src="pets.png">
+    <h1 class="titulo-principal">Amor não se compra se encontra!!</h1>
+    </header>
+    <br>
+    <form>
+        <label for="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" name="nome" id="nomesobrenome" 
+        class="input-padrao" placeholder="Seu nome e sobrenome" required>
+        <br><br>
+        <label for="Email">Email</label>
+        <input type="text" name="email" id="email"
+        class="input-padrao" placeholder="seuemail@dominio.com" required>
+        <br><br>
+        <label for="telefone">telefone</label>
+        <input type="text" name="telefone" id="telefone"
+        class="input-padrao" placeholder="(XX)XXXXX-XXXX" required>
+        <br><br>
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" required></textarea>
+    
+           <section>
+                     <p>Como prefere nosso contato?</p>
+                     <input type="radio" name="contato" value="email" id="radio-email">
+                     <label for="radio-email">Email</label>
+                     
+                     <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                     <label for="radio-telefone">Telefone</label>
 
-        <link rel="stylesheet" href="contato.css">
-    </head>
-    <body>
+                     <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                     <label for="radio-whatsapp">Whatsapp</label>
 
-        <header>
-            <img id="logo" src="pets.jpg">
-            <h1 class="titulo-principal"> Amor verdadeiro não se compra, se encontra!! </h1>
-        </header>
-        <main>  
+                </section>
 
-            <br>
+                <section>
+                     <p>Qual o horário prefere ser atendido</p>
+                     <select>
+                         <option>Manhã</option><!--dropdown - seleções selecionáveis-->
+                         <option>Tarde</option>
+                         <option>Noite</option>
+                     </select>
+                </section> <br>
 
-            <form>
-            <section class="inputBox">
-                <input type="text" name="nome" id="name"
-                class="input-padrao" required>
-                <label for="name" class="labelinput">Seu nome e Sobrenome</label>
-            </section>
-        
-            <br> <br>
+                <label class="checkbox">
+                <input type="checkbox">Gostaria de receber nossas novidades no email?</label> <br><br>
 
-            <section class="inputBox">
-                <input type="text" name="email" id="email"
-                class="input-padrao" placeholder="seuemail@.com" required>
-                <label for="name" class="labelinput">Email</label>
+                <input type="submit" value="Enviar formulário" class="enviar">
 
-            <br> <br> <br> 
 
-             <section class="inputBox">
-                <input type="text" name="telefone" id="telefone"
-                class="input-padrao" placeholder="(XX) XXXX - XXXX" required>
-                <label for="name" class="labelinput">Telefone</label>
-        </form>
-            
-        </main>
-        <footer>
-        </footer>
-    </body>
+                </form>
+ </main>
+
+<footer>
+    <img id="logo1" src="pets.png">
+    <p class="copyright">&copy; Copyright -- Maria Luiza Barbosa</p>
+</footer>
+    
+</body>
 </html>

@@ -1,6 +1,15 @@
 header{
-    background-color:#fa9cb8;
-    padding: 20px;
+    background-image: linear-gradient( rgb(218,112,214), rgb(255,105,180));
+    padding: 30px
+}
+h1{
+    color: whitesmoke;
+}
+
+#logo1{
+   border-radius: 1000px;
+    width: 100px; 
+    
 }
 
 #logo{
@@ -10,36 +19,66 @@ header{
 }
 
 @font-face {
-    font-family: 'open sans';
-    src: url('OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-family:'roca';
+    src: url('roca-one-regular.ttf') format('TrueType')
+       
 }
-
 .titulo-principal{
     position: absolute;
-    top:13%;
-    left:50%;
-    transform: translate(-10%, -50%);
-    font-size: 35px;
-    font-family: 'open sans';
-    color: #ffdbe6;
+    top: 15%;
+    left: 40%;
+    transform: translate(-30px -10px);
+    font-size: 45px;
+    font-family: 'roca';
 }
-
 main{
     width: 940px;
     margin: auto;
 }
 
 form{
+    margin: 40px 0;
+}
+
+form label, from p{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
     margin: 20px 0;
 }
-form label, form p{
-   
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px: /*10px para baixo*/
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(51, 47, 53);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
 }
-#jogojogos2{
-    border-radius:500px;
-    height:100px;
-    width:100px;
+
+.enviar:houver{
+    background: black;
+    transform: scale(1.2);
 }
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+footer{
+    text-align: center;
+    background-image: linear-gradient( rgb(218,112,214), rgb(255,105,180));
+}p
