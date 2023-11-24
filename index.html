@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>formulario Maria</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="estilo.css"
+    <title>Aleatórios</title>
 
-    </head>
-    <body><pre>
-        <form method="post" action="">
-            <input type="date"> Data de nascimento
-            <input type="number" size= 10 placeholder="digite sem os pontos" required name="RG"> Rg
-            <input type="email" size= 80 name="email"> Email
-            <input type="tel" name="telefone"> Telefone
-            <input type="password" name="senha"> Senha
-            <input type="checkbox" name="curso" value="eletromecanica"> eletromecanica
-            <input type="checkbox" name="curso" value="administração"> Administração
-            <input type="checkbox" name="curso" value="desenvolvimento"> Desenvolvimento de Sistemas
-            <input type="checkbox" name="curso" value="eletrônica"> eletrônica
-            <input type="radio" name="matutino"> Matutino
-            <input type="radio" name="vespertino"> Vespertino
-            <input type="radio" name="noturno"> Noturno
-            <select nome="cidade">
-            <option>Cascavel</option>
-            <option>Corbélia</option>
-            <option>Penha</option>
-            </select>
-             <textarea reus= 30 cols= 40>
-                observação
-             </textarea>
-             <img src="logoceep.png" alt="logoceep">
-             <a href="www.ceep.com.br">site da escola</a>
-             <input type="reset" value="Apagar os dados">
-             <input type="submit" value="gravar dados">
-            </form>
-    </body>
-    </html
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/efeitos_sonoros.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <h1>Efeitos Sonoros</h1>
+    <h2>Aleatórios</h2>
+
+    <section class="teclado">
+        <button class="tecla tecla_fagner"><img src="images/fagner.png" alt="fagner"></button>
+        <button class="tecla tecla_messi"><img src="images/messi.png" alt="messi"></button>
+        <button class="tecla tecla_ney"><img src="images/ney.png" alt="ney"></button>
+
+        <button class="tecla tecla_gabi"><img src="images/gabi.png" alt="gabi"></button>
+        <button class="tecla tecla_timao"><img src="images/timao.png" alt="timao"></button>
+        <button class="tecla tecla_cassio"><img src="images/cassio.png" alt="cassio"></button>
+
+        <button class="tecla tecla_cris"><img src="images/cris.png" alt="cris"></button>
+        <button class="tecla tecla_bel"><img src="images/bel.png" alt="bel"></button>
+        <button class="tecla tecla_palmeiras"><img src="images/palmeiras.png" alt="palmeiras"></button>
+       
+    </section>
+
+    <audio src="sounds/fagner.mp4" id="som_tecla_fagner"></audio>
+    <audio src="sounds/me" id="som_tecla_messi"></audio>
+    <audio src="sounds/ney.mp4" id="som_tecla_ney"></audio>
+    <audio src="sounds/gabi.mp4" id="som_tecla_gabi"></audio>
+    <audio src="sounds/timao.m4a" id="som_tecla_timao"></audio>
+    <audio src="sounds/cassio.mp4" id="som_tecla_cassio"></audio>
+    <audio src="sounds/cris.mp4" id="som_tecla_cris"></audio>
+    <audio src="sounds/bel.mp4" id="som_tecla_bel"></audio>
+    <audio src="sounds/palmeiras.mp4" id="som_tecla_palmeiras"></audio>
+ 
+
+</body>
+</html>
